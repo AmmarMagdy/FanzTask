@@ -10,10 +10,17 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
-    
+    private var appCoordinator: Coordinator?
+
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        openSplashViewController(windowScene: windowScene)
+        
+        let window = UIWindow(windowScene: windowScene)
+        self.window = window
+        let appCoordinator = AppCoordinator(window: window,
+                                            navigationController: UINavigationController())
+        self.appCoordinator = appCoordinator
+        appCoordinator.start()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -42,19 +49,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-    }
-    
-    
-}
-
-extension SceneDelegate {
-    func openSplashViewController(windowScene: UIWindowScene) {
-        let viewController = PitchViewViewController()
-        viewController.navigationController?.navigationBar.isHidden = true
-        let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = viewController
-        self.window = window
-        window.overrideUserInterfaceStyle = .light
-        window.makeKeyAndVisible()
     }
 }

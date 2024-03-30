@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="467" id="KGk-i7-Jjw" customClass="CardPlayerTableViewCell" customModule="FanzTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="483" height="467"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="483" height="467"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Big Player Card" translatesAutoresizingMaskIntoConstraints="NO" id="eXq-rn-wwm">
+                        <rect key="frame" x="120" y="0.0" width="243" height="340"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="340" id="FLj-xh-Vjr"/>
+                            <constraint firstAttribute="width" constant="243" id="wmc-t4-i8b"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 91735" translatesAutoresizingMaskIntoConstraints="NO" id="Df2-j1-jFh">
+                        <rect key="frame" x="108.66666666666669" y="340" width="266" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="Xhf-RX-ZDj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salem Al-dousary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlc-zs-xJt">
+                        <rect key="frame" x="0.0" y="385" width="483" height="82"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                        <color key="textColor" red="0.74901960779999999" green="0.71372549019999998" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="eXq-rn-wwm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="1BV-v4-PWL"/>
+                    <constraint firstItem="Dlc-zs-xJt" firstAttribute="top" secondItem="Df2-j1-jFh" secondAttribute="bottom" id="3Yc-3o-q1o"/>
+                    <constraint firstItem="Dlc-zs-xJt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5Nd-3Z-Inn"/>
+                    <constraint firstItem="Df2-j1-jFh" firstAttribute="top" secondItem="eXq-rn-wwm" secondAttribute="bottom" id="JeV-Th-R7o"/>
+                    <constraint firstItem="Df2-j1-jFh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="OLy-2z-sf5"/>
+                    <constraint firstAttribute="trailing" secondItem="Dlc-zs-xJt" secondAttribute="trailing" id="hcn-NH-CgV"/>
+                    <constraint firstItem="eXq-rn-wwm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tcA-oN-JuC"/>
+                    <constraint firstAttribute="bottom" secondItem="Dlc-zs-xJt" secondAttribute="bottom" id="teY-MA-8uH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cardImageView" destination="eXq-rn-wwm" id="MFf-Od-klw"/>
+            </connections>
+            <point key="canvasLocation" x="205.34351145038167" y="193.3098591549296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Big Player Card" width="243" height="347"/>
+        <image name="Group 91735" width="266" height="85"/>
+    </resources>
+</document>

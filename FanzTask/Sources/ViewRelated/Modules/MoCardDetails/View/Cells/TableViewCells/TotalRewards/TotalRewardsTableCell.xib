@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="232" id="KGk-i7-Jjw" customClass="TotalRewardsTableCell" customModule="FanzTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="232"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="447" height="232"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bf-uc-Z9c">
+                        <rect key="frame" x="0.0" y="0.0" width="447" height="88"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upgrade Your Player Card &amp; Get 3X CoinZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yK-cg-6Js">
+                                <rect key="frame" x="24" y="0.0" width="291" height="88"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <color key="textColor" red="0.74901960784313726" green="0.71372549019607845" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 92001" translatesAutoresizingMaskIntoConstraints="NO" id="0Sd-qb-CeY">
+                                <rect key="frame" x="315" y="23" width="98" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="2FA-lM-ExS"/>
+                                    <constraint firstAttribute="width" constant="98" id="ASP-fa-lfd"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqM-sn-ewC">
+                                <rect key="frame" x="305" y="72" width="118" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SR 100 | Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwo-f1-S3U">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.74117647060000003" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="OCS-Q7-EuJ"/>
+                                    <constraint firstItem="dwo-f1-S3U" firstAttribute="leading" secondItem="kqM-sn-ewC" secondAttribute="leading" id="R6o-eR-4i6"/>
+                                    <constraint firstItem="dwo-f1-S3U" firstAttribute="top" secondItem="kqM-sn-ewC" secondAttribute="top" id="S5v-gs-b9L"/>
+                                    <constraint firstAttribute="trailing" secondItem="dwo-f1-S3U" secondAttribute="trailing" id="VbP-82-OUA"/>
+                                    <constraint firstAttribute="bottom" secondItem="dwo-f1-S3U" secondAttribute="bottom" id="iXi-pW-5wn"/>
+                                    <constraint firstAttribute="width" constant="118" id="rWQ-qe-34j"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0Sd-qb-CeY" secondAttribute="trailing" constant="34" id="3pP-M9-oqS"/>
+                            <constraint firstItem="6yK-cg-6Js" firstAttribute="leading" secondItem="2bf-uc-Z9c" secondAttribute="leading" constant="24" id="66a-Bx-cGd"/>
+                            <constraint firstItem="0Sd-qb-CeY" firstAttribute="centerY" secondItem="6yK-cg-6Js" secondAttribute="centerY" id="Ajv-ix-QOc"/>
+                            <constraint firstItem="kqM-sn-ewC" firstAttribute="centerX" secondItem="0Sd-qb-CeY" secondAttribute="centerX" id="GVs-23-bN1"/>
+                            <constraint firstAttribute="height" constant="88" id="KH4-tn-333"/>
+                            <constraint firstAttribute="bottom" secondItem="6yK-cg-6Js" secondAttribute="bottom" id="Tky-xV-deo"/>
+                            <constraint firstItem="6yK-cg-6Js" firstAttribute="top" secondItem="2bf-uc-Z9c" secondAttribute="top" id="UYy-7G-w8J"/>
+                            <constraint firstAttribute="bottom" secondItem="kqM-sn-ewC" secondAttribute="centerY" id="W9q-DC-xkn"/>
+                            <constraint firstItem="0Sd-qb-CeY" firstAttribute="leading" secondItem="6yK-cg-6Js" secondAttribute="trailing" id="k5e-8B-Xmu"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kk-AO-yVt">
+                        <rect key="frame" x="0.0" y="146" width="447" height="88"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 93828" translatesAutoresizingMaskIntoConstraints="NO" id="WZO-Xh-OX1">
+                                <rect key="frame" x="0.0" y="0.0" width="447" height="88"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WZO-Xh-OX1" firstAttribute="top" secondItem="9kk-AO-yVt" secondAttribute="top" id="FCp-aX-UFr"/>
+                            <constraint firstAttribute="height" constant="88" id="Iff-pt-t6t"/>
+                            <constraint firstAttribute="trailing" secondItem="WZO-Xh-OX1" secondAttribute="trailing" id="RD9-0i-U2A"/>
+                            <constraint firstItem="WZO-Xh-OX1" firstAttribute="leading" secondItem="9kk-AO-yVt" secondAttribute="leading" id="gOj-cz-h4d"/>
+                            <constraint firstAttribute="bottom" secondItem="WZO-Xh-OX1" secondAttribute="bottom" id="stj-Ws-LtY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2bf-uc-Z9c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4Zz-KG-XpZ"/>
+                    <constraint firstItem="9kk-AO-yVt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EO1-cE-bXe"/>
+                    <constraint firstAttribute="trailing" secondItem="9kk-AO-yVt" secondAttribute="trailing" id="Oqs-3D-gB1"/>
+                    <constraint firstAttribute="trailing" secondItem="2bf-uc-Z9c" secondAttribute="trailing" id="Q1h-rz-vf7"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9kk-AO-yVt" secondAttribute="bottom" id="eue-oL-I5K"/>
+                    <constraint firstItem="9kk-AO-yVt" firstAttribute="top" secondItem="2bf-uc-Z9c" secondAttribute="bottom" constant="58" id="ieq-vs-IsX"/>
+                    <constraint firstItem="2bf-uc-Z9c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zdw-o0-Hq0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="177.86259541984731" y="107.74647887323944"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 92001" width="112" height="85"/>
+        <image name="Group 93828" width="428" height="88"/>
+    </resources>
+</document>
