@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Icon ionic-ios-share-alt.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

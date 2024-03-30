@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Help Guide.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
