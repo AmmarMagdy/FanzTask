@@ -8,13 +8,10 @@ let project = Project(
             destinations: .iOS,
             product: .app,
             bundleId: "io.tuist.FanzTask",
-            infoPlist: .extendingDefault(
-                with: [
-                    "UILaunchStoryboardName": "LaunchScreen.storyboard",
-                ]
-            ),
+            infoPlist: "Derived/InfoPlists/FanzTask-Info.plist",
             sources: ["FanzTask/Sources/**"],
-            resources: ["FanzTask/Resources/**"],
+            resources: ["FanzTask/Resources/**",
+                        "FanzTask/Sources/ViewRelated/Modules/**/*.xib"],
             dependencies: []
         ),
         .target(
