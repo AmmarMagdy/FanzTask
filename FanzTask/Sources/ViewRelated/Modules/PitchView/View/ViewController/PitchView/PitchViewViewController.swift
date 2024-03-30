@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FirebaseRemoteConfig
+//import FirebaseRemoteConfig
 
 final class PitchViewViewController: UIViewController {
     
@@ -39,11 +39,11 @@ final class PitchViewViewController: UIViewController {
         super.viewDidLoad()
         scrollView.contentInsetAdjustmentBehavior = .never
         setupViews()
-        let remoteConfig = RemoteConfig.remoteConfig()
-        let settings = RemoteConfigSettings()
-        settings.minimumFetchInterval = 0
-        remoteConfig.configSettings = settings
-        remoteConfig.setDefaults(fromPlist: "RemoteConfigDefaults")
+//        let remoteConfig = RemoteConfig.remoteConfig()
+//        let settings = RemoteConfigSettings()
+//        settings.minimumFetchInterval = 0
+//        remoteConfig.configSettings = settings
+//        remoteConfig.setDefaults(fromPlist: "RemoteConfigDefaults")
     }
     
     func setupViews() {

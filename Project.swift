@@ -8,7 +8,7 @@ let project = Project(
             destinations: .iOS,
             product: .app,
             bundleId: "io.tuist.FanzTask",
-            infoPlist: "Derived/InfoPlists/FanzTask-Info.plist",
+            infoPlist: "FanzTask/Sources/FanzTask-Info.plist",
             sources: ["FanzTask/Sources/**"],
             resources: ["FanzTask/Resources/**",
                         "FanzTask/Sources/ViewRelated/Modules/**/*.xib"],
